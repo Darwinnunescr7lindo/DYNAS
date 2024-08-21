@@ -1,69 +1,62 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Brawl Stars</title>
-</head>
-<body>
-    <main>
-        <div class="passo ativo" id="passo-0">
-            <p>Ao abrir o seu celular você vai ter 2 opções de escolha:</p>
-            <button class="btn-proximo" data-proximo="1">Jogar brawl stars</button>
-            <button class="btn-proximo" data-proximo="2">desinstalar o brawl stars</button>
-        </div>
+body {
+    font-size: 18px; /* Ajustado para melhorar a legibilidade */
+    background-color: rgb(230, 63, 21);
+    color: yellow;
+    font-family: "Gupter", serif;
+    text-align: center;
+    margin: 0;
+    height: 100vh; /* Ajustado para ocupar a altura total da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        <div class="passo ativo" id="passo-2">
-            <p>Escolha outra opção:</p>
-            <button class="btn-proximo" data-proximo="3">FIM</button>
-        </div>
+button {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 20px; /* Ajustado para uma melhor consistência */
+    font-family: "Gupter", serif;
+    border: none; /* Removido borda padrão dos botões */
+    padding: 10px 20px; /* Adicionado preenchimento para melhor aparência */
+    margin: 10px; /* Adicionado margem entre os botões */
+    cursor: pointer; /* Mudança do cursor para indicar que é clicável */
+}
 
-        <div class="passo" id="passo-1">
-            <p>Ao abrir o brawl stars você pode jogar de dynamike ou sair do jogo porque ainda não desabilitou mais brawlers:</p>
-            <button class="btn-proximo" data-proximo="4">Jogar de dynamike:um lançador que lança dynamites nos players  </button>
-            <button class="btn-proximo" data-proximo="5">Sair do jogo</button>
-        </div>
+.btn-proximo3 {
+    background-color: rgb(216, 0, 0);
+    color: black;
+}
 
-        <div class="passo" id="passo-4">
-            <p>Fazer o dyna jump e fugir dos inimigos ou matar todos os players inimigos</p>
-            <button class="btn-proximo" data-proximo="2">Fazer o dyna jump e fugir</button>
-            <button class="btn-proximo" data-proximo="3">Matar todos os players</button>
-        </div><!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Brawl Stars</title>
-</head>
-<body>
-    <main>
-        <div class="passo ativo" id="passo-0">
-            <p>Ao abrir o seu celular você vai ter 2 opções de escolha:</p>
-            <button class="btn-proximo" data-proximo="1">Jogar brawl stars</button>
-            <button class="btn-proximo" data-proximo="2">desinstalar o brawl stars</button>
-        </div>
+.btn-proximo4 {
+    background-color: rgb(10, 99, 21);
+    color: black;
+}
 
-        <div class="passo ativo" id="passo-2">
-            <p>Escolha outra opção:</p>
-            <button class="btn-proximo" data-proximo="3">FIM</button>
-        </div>
+.btn-proximo5 {
+    background-color: rgb(0, 123, 194);
+    color: black;
+}
 
-        <div class="passo" id="passo-1">
-            <p>Ao abrir o brawl stars você pode jogar de dynamike ou sair do jogo porque ainda não desabilitou mais brawlers:</p>
-            <button class="btn-proximo" data-proximo="4">Jogar de dynamike:um lançador que lança dynamites nos players  </button>
-            <button class="btn-proximo" data-proximo="5">Sair do jogo</button>
-        </div>
+.btn-proximo6 {
+    background-color: yellow;
+    color: black; /* Adicionado para garantir contraste adequado */
+}
 
-        <div class="passo" id="passo-4">
-            <p>Fazer o dyna jump e fugir dos inimigos ou matar todos os players inimigos</p>
-            <button class="btn-proximo" data-proximo="2">Fazer o dyna jump e fugir</button>
-            <button class="btn-proximo" data-proximo="3">Matar todos os players</button>
-        </div>
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto; /* Adicionado para centralizar o conteúdo horizontalmente */
+}
+
+img {
+    max-width: 100%; /* Ajustado para garantir que as imagens não ultrapassem o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}

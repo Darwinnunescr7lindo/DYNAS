@@ -24,17 +24,17 @@ button {
 
 .btn-proximo3 {
     background-color: rgb(216, 0, 0);
-    color: black;
+    color: white; /* Ajustado para garantir melhor contraste */
 }
 
 .btn-proximo4 {
     background-color: rgb(10, 99, 21);
-    color: black;
+    color: white; /* Ajustado para garantir melhor contraste */
 }
 
 .btn-proximo5 {
-    background-color: rgb(0, 123, 194);
-    color: black;
+    background-color: rgb(255, 0, 0); /* Corrigido para uma cor válida */
+    color: white; /* Ajustado para garantir melhor contraste */
 }
 
 .btn-proximo6 {
